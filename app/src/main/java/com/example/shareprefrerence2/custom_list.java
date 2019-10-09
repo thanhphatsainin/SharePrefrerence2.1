@@ -46,13 +46,13 @@ public class custom_list extends ArrayAdapter implements dat {
         viewHolder.header.setText(arrayKeep.get(position).getHeader());
         viewHolder.content.setText(arrayKeep.get(position).getContent());
 
-        convertView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                Toast.makeText(context,"alooo",Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });
+//        convertView.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View view) {
+//                Toast.makeText(context,"alooo",Toast.LENGTH_SHORT).show();
+//                return false;
+//            }
+//        });
 
         return convertView;
     }

@@ -48,6 +48,13 @@ public class MainActivity extends AppCompatActivity implements dat, View.OnClick
                  startActivity(intent);
             }
         });
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(MainActivity.this, "Alo", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
     }
     public void getData()
     {
